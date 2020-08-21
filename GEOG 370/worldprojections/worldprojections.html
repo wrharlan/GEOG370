@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>In this project I learned how to display images in different projections</h1>
+    
+    <h2 style="color:red"></h2>
+    <p>This world map can be projected in many ways based upon what information the user wants 
+        to know. The QGIS program with the help of the Indicatrix Mapper allowed me to create several 
+        different versions of the same map. The projections were manipulated by changing the 
+        Coordinate Reference System or CRS, resulting in the various projections that can be seen
+        below. After figuring out how to display the map in one specific projection, it became easier
+        to test and see new projections. 
+         </p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>The WGS84 projection is a very widely used projection because the Global Positioning System or GPS
+        uses this as its coordinate reference system. This projection maintains area at the expense of
+        shape. This can be seen towards the poles with the horizontal stretching of land.
+    </h3>
+    <a href=".//worldmap4326.png">
+    <img src=".//worldmap4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>This projection seeks to mitigate distortion by elongating the poles. Although better than some other
+        projections, there is still some vertical stretching that interferes with the natural shape of the features. 
+        Antarctica is much less distorted in this projection than in, say, WGS84.
+    </h3>
+    <a href=".//worldmap54043.png">
+    <img src=".//worldmap54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Pseudo-Mercator Projection</h2>
+    <h3>The Pseudo-Mercator projection has size distortion towards the poles. One example of this is the size difference 
+        between Alaska and Australia. On this map, they appear to be the same size but in reality, Australia is almost five
+        times larger than Alaska.
+    </h3>
+    <a href=".//worldmap3857.png">
+    <img src=".//worldmap3857.png" alt="Pseudo-Mercator" width='500px'>
+    </a>
+    <h2>Sphere Winkel Projection</h2>
+    <h3>The Sphere Winkel Projection is the arithmetic mean of the equirectangular projection and the 
+        Aitoff projection, making it a balanced map in terms of size and shape distortion. There is still
+        distortion in this map near the poles, but it is still useful for its fairly-accurate dimensions.
+    </h3>
+    <a href=".//worldmap53018.png">
+    <img src=".//worldmap53018.png" alt="Sphere" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>This projection preserves area and size throughout the map but forgoes shape and distance in doing so.
+        This can be seen in simply how distorted the polar regions of the map are compared to a projection that 
+        preserves shape instead.
+    </h3>
+    <a href=".//worldmap54034.png">
+    <img src=".//worldmap54034.png" alt="Cylindrical" width='500px'>
+    </a>
+    <h2>World Equidistant Conical Projection</h2>
+    <h3>This projection is different from the rest because instead of a rectangular map it is circular.
+        The center of the map is the north pole and all the meridian lines extend equidistantly from one 
+        another to the edge of the projection. This projection greatly distorts shape and size, which can
+        clearly be seen with Antarctica as it is wrapped around the projection like a ring. 
+    </h3>
+    <a href=".//worldmap54027.png">
+    <img src=".//worldmap54027.png" alt="Conical" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>This projection is similar to the World Equidistant Conical Projections because it also uses the 
+        North Pole as a center point. One advantage to this map is that all points on this map are at proportionally
+        correct distances from the pole or center. 
+    </h3>
+    <a href=".//worldmap102016.png">
+    <img src=".//worldmap102016.png" alt="Azimuthal" width='500px'>
+    </a>
+    <h2>Eckert II Projection</h2>
+    <h3>This projection is interesting because it uses only straight lines for lattitude and longitude.
+        Also, it has a distinct hexagonal shape around the perimeter. This is also and equal-area projection.
+    </h3>
+    <a href=".//worldmap54014.png">
+    <img src=".//worldmap54014.png" alt="Eckert II" width='500px'>
+    </a>
+    <h2>Miller Cylindical Projection</h2>
+    <h3>This projection is similar to other cylindical projections. The main difference is that the Miller Cylindrical
+        projection shows the polar regions in more detail. It is essentially an elongated version of the Cylindical
+        Equal Area Projection above.
+    </h3>
+    <a href=".//worldmap53003.png">
+    <img src=".//worldmap53003.png" alt="Miller" width='500px'>
+    </a>
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
