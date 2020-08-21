@@ -1,2 +1,0 @@
-# GEOG370
-GEOG 370 Projects
